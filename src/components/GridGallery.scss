@@ -1,0 +1,22 @@
+@use '../scss/variables.scss'as *;
+
+.galleryGrid{
+    border-radius: 25px;
+    min-height: auto;
+    background-color:$color-quadrary;
+   display: flex;
+   flex-wrap: wrap;
+ justify-content: space-around;
+ gap: 33px;
+ padding: 44px 0px 44px 0px;
+ & > *{
+width: 100%;
+max-width: 20rem; }
+}
+@media screen and (width<=768px){
+    .galleryGrid{
+        background-color: $color-tertiary;
+        justify-content: center;
+        padding: 0 20px;
+    } 
+}

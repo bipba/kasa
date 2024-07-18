@@ -1,0 +1,43 @@
+@use "../scss/variables.scss" as *;
+.description__pancarte{
+    margin-bottom: 1rem;
+    p{
+    margin-block: 0;
+    // max-width: 45%;
+}
+    .description__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    background-color: $color-primary;
+    color: white;
+   
+    height:52px;
+    border-radius: 5px ;
+    // max-width: 500px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.67px;
+    text-align: left;
+    padding: 0 10px;
+    position: relative;
+    z-index: 2;
+    & .fa-solid {
+        font-size: 32px;
+        cursor: pointer;
+      
+        
+    }
+}
+.description__article{
+    background-color: #f6f6f6;
+    // max-width: 495px;
+    padding: 25px 15px 25px 10px;
+    border-radius: 5px ;
+    position: relative;
+    top: -0.3rem;
+    z-index: 1;
+
+}
+}

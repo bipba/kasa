@@ -1,0 +1,50 @@
+@use './../../scss/variables.scss'as *;
+.navbar{
+    background-color:$color-tertiary;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: row;
+   text-align: center;
+  //  justify-content: space-between;
+    gap: 2rem;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    /* margin: auto; */
+    height: 68px;
+    margin: 20px 20px 44px 20px;
+  
+   @media screen and (width<=768px) {
+    text-transform: uppercase;;
+}
+   
+   & >*:first-child{
+       margin-right: auto;
+       
+   }
+   & a{
+      text-decoration: none;
+      color: black;
+      &:hover,&.active{
+         text-decoration: underline 1px;
+         color: black;
+     }
+     @media screen and (width<=768px) {
+ 
+     font-size: 12px;
+     font-weight: 500;
+     line-height: 17.11px;
+     text-align: right;
+     
+   }
+ }
+@media screen and (width<=768px){
+    .navbar__logo {
+        /* margin-right: auto; */
+        width: 145px;
+        height: 46.88px;
+      
+    }
+}
+}

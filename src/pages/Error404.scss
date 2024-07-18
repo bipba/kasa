@@ -1,0 +1,23 @@
+@use "./../scss/variables.scss" as *;
+.error{
+    color: $color-primary;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    & p{
+        font-size: 36px;
+        font-weight: 500;
+        margin:140px 0 120px 0;
+    }
+    & a{
+        color: black;
+    }
+//     @media screen and (width<=768px){
+// .error img{
+//     width: 100px;
+// }
+// }
+}
+.navbar{
+    margin: 30px 0 140px 0;
+}
