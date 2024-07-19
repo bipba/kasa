@@ -1,8 +1,15 @@
 import React from 'react'
 import "./AppartHead.scss";
-function AppartHead(props) {
-  const flat=props.selectedFlat
-  const name = flat.host.name
+
+
+
+
+
+
+
+function AppartHead({flat}) {
+ 
+  const {name} = flat.host
   // const [firstName,lastName]=name.split()
   return (
     <div className='appart__head'>
@@ -10,10 +17,9 @@ function AppartHead(props) {
          <h2>{flat.title}</h2>
             <h3>{flat.location}</h3>
           <div className='appart__tags'>
-            {/* <span className='appart__tag'>Cozy</span>
-            <span className='appart__tag'>Canal</span>
-            <span className='appart__tag'>Paris 10</span> */}
-          {flat.tags.map((tag)=>(<span key={tag}>{tag}</span>))}
+ 
+          {flat.tags.map((tag)=>(
+          <span key={tag} className='appart__tag' >{tag}</span>))}
           
           </div>
     </div>
@@ -27,7 +33,8 @@ function AppartHead(props) {
         <div className='appart__details__rate'> 
 
       {[1,2,3,4,5].map((num)=>(
-        <span className={props.selectedFlat.rating >= num ? "up" : ""}>★</span>
+        <span 
+          key ={num}className={flat.rating >= num ? "up" : ""}>★</span>
       ))}
       </div>
         </div>
