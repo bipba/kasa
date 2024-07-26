@@ -1,16 +1,8 @@
 import React from 'react'
 import "./AppartHead.scss";
-
-
-
-
-
-
-
 function AppartHead({flat}) {
  
   const {name} = flat.host
-  // const [firstName,lastName]=name.split()
   return (
     <div className='appart__head'>
     <div className='appart__title'>

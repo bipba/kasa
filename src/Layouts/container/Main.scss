@@ -2,7 +2,9 @@
 .main{
    
  background-color:$color-tertiary; 
-padding-inline: 1rem; 
+padding-inline: 50px; 
  padding-bottom: 33px; 
-
+ @media screen and (width<=768px){
+    padding-inline: 20px;
+ }
  }

@@ -5,9 +5,6 @@ import AppartHead from '../components/AppartHead'
 import ImgBanner from '../components/ImgBanner'
 import { useLocation } from 'react-router-dom'
 import { Value } from 'sass'
-
-
-
 function locationPage() {
   const location = useLocation()
   //quand le state (selectedFlat)change le composant est rerender
@@ -26,12 +23,14 @@ const [flat,setflat]=useState(null)
   return (
     <div className='appart'>
    
-      <ImgBanner imageUrl={flat.cover}/>
+      <ImgBanner pictures={flat.pictures}/>
       {/* <AppartHead title={selectedFlat.title}description ={selectedFlat.description} /> */}
       <AppartHead flat={flat}/>
     <div className='Appart__draft__flex'>
       <DescriptionPancarte title = "Description" content={flat.description}/>
-      <DescriptionPancarte title = "Equipements" content= {flat.equipments.map(eq=><li>{eq}</li>)}/>
+      <DescriptionPancarte 
+      title = "Equipements" 
+      content= {flat.equipments.map((eq,i)=>(<li key={i}>{eq}</li>))}/>
     </div>
     </div>
         

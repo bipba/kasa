@@ -7,3 +7,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
+// provider=> donne acces à tous ses enfants et arriere petits enfants(composants) aux props dans le provider theme logué ou pas panier

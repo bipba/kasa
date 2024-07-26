@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className='footer'>
       <div>
-        <img src="logo.png" alt="Logo du site Kasa" />
+        <img src="footerLogo.png" alt="Logo du site Kasa" />
       <div className='footer__link'>
         © 2020 Kasa. All rights reserved
       </div>

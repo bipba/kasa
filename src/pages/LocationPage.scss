@@ -6,7 +6,12 @@
     display: flex;
    justify-content: space-between;
    gap: 33px;
-   
+   overflow: hidden;
+
+   & description__pancarte{
+       overflow: hidden;
+
+   }
    @media screen and (width<=768px) {
     flex-direction: column;
 }

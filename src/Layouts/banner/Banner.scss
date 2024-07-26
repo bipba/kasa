@@ -16,5 +16,10 @@
    margin-bottom: 3rem;
     background-repeat: no-repeat;
     text-align: center;
-    
+    @media screen and (width<=768px){
+      text-align: start;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 0 20px;
+}
 }

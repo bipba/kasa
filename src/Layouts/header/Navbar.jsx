@@ -1,17 +1,18 @@
 import React from 'react'
 import './Navbar.scss'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link} from 'react-router-dom'
 function Navbar() {
   function styleLink (){
     
   }
+//navlink permet de recharger une ui en local au lieu d'une nouvelle page url sans aller dans le serveur
   return(
     <nav className='navbar'>
-      <NavLink to="/">
+    <Link to="/">
       <div >
         <img className='navbar__logo'src="logo.png" alt="Logo Kasa" />
       </div>
-      </NavLink>
+      </Link>
       <NavLink to={`/`} style={styleLink()}>
     <div>Accueil</div>
     </NavLink>
