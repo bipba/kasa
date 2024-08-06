@@ -10,7 +10,7 @@ function fetchApparts(){
   fetch ("./../src/datas/db.json")
   .then ((res) => res.json())
   .then ((res)=>setApparts(res))
-  // .catch (console.error);
+  .catch (console.error);
 }
     // console.log("myArray:", myArray)
   return (

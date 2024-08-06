@@ -12,9 +12,12 @@
     & a{
         color: black;
     }
-//     @media screen and (width<=768px){
-// .error img{
-//     width: 100px;
-// }
-// }
+    & .error__404{
+        margin-top: 222px;
+    }
+    @media screen and (width<=768px){
+ .error__404{
+    width: 100px;
+}
+}
 }

@@ -24,8 +24,15 @@ const picturesAvailable = () =>{
   return pictures && pictures.length > 0
 }
 const getCarouselImg = () => {
-  if (!picturesAvailable())
-  return <img src="img4.png" className='show' alt="" />
+  if (!picturesAvailable()) {
+    return (
+      <div className='img__banner' style={{ height: '223px' }}>
+        <div className='image__container' style={{height: '223px' }}>
+          <img src="img4.png" style={{ height: '223px' }} className='show' alt="" />
+        </div>
+      </div>
+    );
+  }
 
 return pictures .map((pic, i) => (
 <img key={pic} src={pic} alt="" className={getClassName(i)}></img>))

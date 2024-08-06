@@ -26,7 +26,7 @@ export const router = createBrowserRouter ([//installation du router
   {
    
     element:<LayoutHeaderFooter />,
-     errorElement: <Error404/>,
+    //  errorElement: <Error404/>,
      children: [
       {
         path:"/",
@@ -41,6 +41,12 @@ export const router = createBrowserRouter ([//installation du router
       path:"/aPropos",
       element: <Apropos/>
     }
+    ,
+    {
+      path:"*",
+      element: <Error404/>
+    }
      ],
   },
+ 
  ])

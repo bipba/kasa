@@ -8,8 +8,8 @@ function Error404() {
   return (
     <div className='error'>
         <Main>
-        <Navbar/>
-          <img src="404.png" alt="Error 404" />
+       
+          <img src="404.png" alt="Error 404" className='error__404'/>
           <p> Oups ! La page que vous demandez n'existe pas.</p>
           <NavLink to="/">Retourner sur la page d'accueil</NavLink>
         </Main>

@@ -16,6 +16,9 @@
         // height: auto;
         margin-bottom: 5px;
        margin-top: 0px;
+       @media screen and (width<=768px){
+        font-size: 18px;
+       }
     }
     & h3{
         max-width: 175px;
@@ -37,6 +40,10 @@
         font-size: 14px;
         font-weight: 700;
        text-align: center;
+       @media screen and (width<=768px){
+        padding: 2px 10px;
+        font-size: 10px;
+       }
     }
     .appart__host{
         margin-left: auto;
@@ -54,7 +61,7 @@
         }
         .alex{
             color: $color-primary;
-            width: 93px;
+            width: 75px;
             height: 52px;
             font-size: 18px;
             font-weight: 500;

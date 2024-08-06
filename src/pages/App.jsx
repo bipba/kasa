@@ -7,7 +7,9 @@ import './App.scss'
 function App() {
   return (
     <>
-      <Banner/>
+     <Banner  image="img1.png" >
+     <h1>Partout, chez vous et ailleurs</h1>
+       </Banner>
       <GridGallery/>
     </>
   )
