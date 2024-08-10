@@ -19,7 +19,7 @@ function AppartHead({flat}) {
         <div className='appart__host__grid'>
             <span className='alex'>{name}</span>
             <div className='appart__host__pins'>
-              <img src={flat.host.picture} alt="" />
+              <img src={flat.host.picture} alt= "Img propriétaire" />
             </div>
         </div>
         <div className='appart__details__rate'> 

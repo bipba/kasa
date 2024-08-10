@@ -10,12 +10,12 @@
     font-weight: 500;
     font-size: 24px;
     height: 68px;
-    margin: 30px 50px 50px 50px;
+    margin: 30px 56px 50px 56px;
 
    @media screen and (width<=768px) {
     text-transform: uppercase;
     gap: 1rem;
-    margin: 30px 20px 50px 20px;
+    margin: 10px 20px 20px 20px;
 }
    
    & >*:first-child{
