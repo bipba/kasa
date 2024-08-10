@@ -12,7 +12,6 @@ import Error404 from '../pages/Error404';
 const LayoutHeaderFooter = () => {
   return(
   <>
-  
     <Navbar/>
     <Main>
       <Outlet/>
